@@ -1,0 +1,246 @@
+2025-08-06 15:57:28 | INFO | src.wikipedia_scraper:scrape_urls_from_file:193 | Found 8 URLs to scrape
+2025-08-06 15:57:28 | INFO | src.wikipedia_scraper:scrape_urls_from_file:217 | Processing transformers group with 6 URLs
+2025-08-06 15:57:28 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers (film series)
+2025-08-06 15:57:32 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:80 | Successfully scraped Transformers (film series) using wikipedia library
+2025-08-06 15:57:32 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers_(film_series).docx
+2025-08-06 15:57:32 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers_(film_series).txt
+2025-08-06 15:57:32 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers (film)
+2025-08-06 15:57:33 | WARNING | src.wikipedia_scraper:scrape_wikipedia_page:83 | Wikipedia library failed for Transformers (film): Page id "transformes films" does not match any pages. Try another id!
+2025-08-06 15:57:34 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:116 | Successfully scraped Transformers (film) using BeautifulSoup
+2025-08-06 15:57:34 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers_(film).docx
+2025-08-06 15:57:34 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers_(film).txt
+2025-08-06 15:57:34 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers: Revenge of the Fallen
+2025-08-06 15:57:35 | WARNING | src.wikipedia_scraper:scrape_wikipedia_page:83 | Wikipedia library failed for Transformers: Revenge of the Fallen: Page id "transformes revenge of the fallen" does not match any pages. Try another id!
+2025-08-06 15:57:36 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:116 | Successfully scraped Transformers: Revenge of the Fallen using BeautifulSoup
+2025-08-06 15:57:36 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers__Revenge_of_the_Fallen.docx
+2025-08-06 15:57:36 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers__Revenge_of_the_Fallen.txt
+2025-08-06 15:57:36 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers: Dark of the Moon
+2025-08-06 15:57:39 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:80 | Successfully scraped Transformers: Dark of the Moon using wikipedia library
+2025-08-06 15:57:40 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers__Dark_of_the_Moon.docx
+2025-08-06 15:57:40 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers__Dark_of_the_Moon.txt
+2025-08-06 15:57:40 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers: Age of Extinction
+2025-08-06 15:57:43 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:80 | Successfully scraped Transformers: Age of Extinction using wikipedia library
+2025-08-06 15:57:43 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers__Age_of_Extinction.docx
+2025-08-06 15:57:43 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers__Age_of_Extinction.txt
+2025-08-06 15:57:43 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Transformers: The Last Knight
+2025-08-06 15:57:46 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:80 | Successfully scraped Transformers: The Last Knight using wikipedia library
+2025-08-06 15:57:46 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\transformers_Transformers__The_Last_Knight.docx
+2025-08-06 15:57:46 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\transformers_Transformers__The_Last_Knight.txt
+2025-08-06 15:57:46 | INFO | src.wikipedia_scraper:scrape_urls_from_file:217 | Processing gupta_empire group with 1 URLs
+2025-08-06 15:57:46 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Gupta Empire
+2025-08-06 15:57:47 | WARNING | src.wikipedia_scraper:scrape_wikipedia_page:83 | Wikipedia library failed for Gupta Empire: Page id "guitar empire" does not match any pages. Try another id!
+2025-08-06 15:57:48 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:116 | Successfully scraped Gupta Empire using BeautifulSoup
+2025-08-06 15:57:48 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\gupta_empire_Gupta_Empire.docx
+2025-08-06 15:57:48 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\gupta_empire_Gupta_Empire.txt
+2025-08-06 15:57:48 | INFO | src.wikipedia_scraper:scrape_urls_from_file:217 | Processing kuru_kingdom group with 1 URLs
+2025-08-06 15:57:48 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:69 | Scraping Wikipedia page: Kuru kingdom
+2025-08-06 15:57:50 | WARNING | src.wikipedia_scraper:scrape_wikipedia_page:83 | Wikipedia library failed for Kuru kingdom: Page id "kura kingdom" does not match any pages. Try another id!
+2025-08-06 15:57:50 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:116 | Successfully scraped Kuru kingdom using BeautifulSoup
+2025-08-06 15:57:50 | INFO | src.wikipedia_scraper:save_as_docx:152 | Saved document: documents\kuru_kingdom_Kuru_kingdom.docx
+2025-08-06 15:57:50 | INFO | src.wikipedia_scraper:save_as_txt:170 | Saved text file: documents\kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 15:57:50 | INFO | src.wikipedia_scraper:scrape_urls_from_file:243 | Wikipedia scraping completed!
+2025-08-06 16:00:38 | INFO | src.rag_engine:query:362 | Processing query: Describe the Kuru kingdom...
+2025-08-06 16:00:46 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: Describe the Kuru kingdom...
+2025-08-06 16:00:48 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'Describe the Kuru kingdom...'
+2025-08-06 16:00:48 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:00:48 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:00:55 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:01:02 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:01:02 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:01:02 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:01:19 | INFO | src.rag_engine:query:362 | Processing query: What is the Gupta Empire?...
+2025-08-06 16:01:24 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What is the Gupta Empire?...
+2025-08-06 16:01:27 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'What is the Gupta Empire?...'
+2025-08-06 16:01:27 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:01:27 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:01:34 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:01:42 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:01:42 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:01:42 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:02:03 | INFO | src.rag_engine:query:362 | Processing query: What are the Transformers movies about?...
+2025-08-06 16:02:08 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What are the Transformers movies about?...
+2025-08-06 16:02:10 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'What are the Transformers movies about?...'
+2025-08-06 16:02:10 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:02:10 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:02:17 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:02:22 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:02:22 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:02:22 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:204 | Found 8 URLs to scrape
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing transformers group with 6 URLs
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers (film series), skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers (film), skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers: Revenge of the Fallen, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers: Dark of the Moon, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers: Age of Extinction, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers: The Last Knight, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing gupta_empire group with 1 URLs
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Gupta Empire, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing kuru_kingdom group with 1 URLs
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Kuru kingdom, skipping...
+2025-08-06 16:12:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:252 | Wikipedia scraping completed!
+2025-08-06 16:12:55 | INFO | src.document_processor:process_all_documents:156 | Found 10 documents to process
+2025-08-06 16:12:55 | INFO | src.document_processor:process_single_document:88 | Processing document: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_pdf:50 | Successfully extracted text from PDF: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 5 chunks from Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: gupta_empire_Gupta_Empire.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: gupta_empire_Gupta_Empire.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 41 chunks from gupta_empire_Gupta_Empire.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_docx:66 | Successfully extracted text from DOCX: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 25 chunks from Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 14 chunks from kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers_(film).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers_(film).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 41 chunks from transformers_Transformers_(film).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers_(film_series).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers_(film_series).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 44 chunks from transformers_Transformers_(film_series).txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers__Age_of_Extinction.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers__Age_of_Extinction.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 46 chunks from transformers_Transformers__Age_of_Extinction.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers__Dark_of_the_Moon.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers__Dark_of_the_Moon.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 68 chunks from transformers_Transformers__Dark_of_the_Moon.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers__Revenge_of_the_Fallen.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers__Revenge_of_the_Fallen.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 44 chunks from transformers_Transformers__Revenge_of_the_Fallen.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers__The_Last_Knight.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers__The_Last_Knight.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_single_document:132 | Created 46 chunks from transformers_Transformers__The_Last_Knight.txt
+2025-08-06 16:12:56 | INFO | src.document_processor:process_all_documents:167 | Total documents processed: 374 chunks from 10 files
+2025-08-06 16:12:56 | INFO | src.vector_store_manager:__init__:50 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-06 16:12:56 | INFO | src.vector_store_manager:_initialize_chroma:75 | Initialized ChromaDB at vector_store
+2025-08-06 16:12:59 | INFO | src.vector_store_manager:check_embedding_model:231 | Embedding model working correctly. Dimension: 1024
+2025-08-06 16:12:59 | INFO | src.vector_store_manager:add_documents:88 | Adding 374 documents to vector store...
+2025-08-06 16:12:59 | INFO | src.vector_store_manager:add_documents:98 | Processing batch 1/8 (50 documents)
+2025-08-06 16:14:49 | INFO | src.vector_store_manager:add_documents:98 | Processing batch 2/8 (50 documents)
+2025-08-06 16:16:39 | INFO | src.vector_store_manager:add_documents:98 | Processing batch 3/8 (50 documents)
+2025-08-06 16:20:22 | INFO | src.wikipedia_scraper:scrape_urls_from_file:204 | Found 3 URLs to scrape
+2025-08-06 16:20:22 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing transformers group with 1 URLs
+2025-08-06 16:20:22 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Transformers (film series)
+2025-08-06 16:20:23 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Transformers (film series) using wikipediaapi library
+2025-08-06 16:20:23 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: documents\transformers_Transformers_(film_series).txt
+2025-08-06 16:20:23 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing gupta_empire group with 1 URLs
+2025-08-06 16:20:23 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Gupta Empire
+2025-08-06 16:20:24 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Gupta Empire using wikipediaapi library
+2025-08-06 16:20:24 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: documents\gupta_empire_Gupta_Empire.txt
+2025-08-06 16:20:24 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing kuru_kingdom group with 1 URLs
+2025-08-06 16:20:24 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Kuru kingdom
+2025-08-06 16:20:25 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Kuru kingdom using wikipediaapi library
+2025-08-06 16:20:25 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: documents\kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:20:25 | INFO | src.wikipedia_scraper:scrape_urls_from_file:252 | Wikipedia scraping completed!
+2025-08-06 16:20:25 | INFO | src.document_processor:process_all_documents:156 | Found 5 documents to process
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:88 | Processing document: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:20:25 | INFO | src.document_processor:extract_text_from_pdf:50 | Successfully extracted text from PDF: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:132 | Created 3 chunks from Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:88 | Processing document: gupta_empire_Gupta_Empire.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: gupta_empire_Gupta_Empire.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:132 | Created 24 chunks from gupta_empire_Gupta_Empire.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:88 | Processing document: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:20:25 | INFO | src.document_processor:extract_text_from_docx:66 | Successfully extracted text from DOCX: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:132 | Created 11 chunks from Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:88 | Processing document: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:132 | Created 10 chunks from kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers_(film_series).txt
+2025-08-06 16:20:25 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers_(film_series).txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_single_document:132 | Created 20 chunks from transformers_Transformers_(film_series).txt
+2025-08-06 16:20:25 | INFO | src.document_processor:process_all_documents:167 | Total documents processed: 68 chunks from 5 files
+2025-08-06 16:20:25 | INFO | src.vector_store_manager:__init__:50 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-06 16:20:25 | INFO | src.vector_store_manager:_initialize_chroma:75 | Initialized ChromaDB at vector_store
+2025-08-06 16:20:28 | INFO | src.vector_store_manager:check_embedding_model:231 | Embedding model working correctly. Dimension: 1024
+2025-08-06 16:20:28 | INFO | src.vector_store_manager:add_documents:88 | Adding 68 documents to vector store...
+2025-08-06 16:20:28 | INFO | src.vector_store_manager:add_documents:98 | Processing batch 1/2 (50 documents)
+2025-08-06 16:22:20 | INFO | src.vector_store_manager:add_documents:98 | Processing batch 2/2 (18 documents)
+2025-08-06 16:23:01 | INFO | src.vector_store_manager:add_documents:106 | Successfully added all documents to vector store
+2025-08-06 16:23:01 | INFO | src.vector_store_manager:__init__:50 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-06 16:23:01 | INFO | src.vector_store_manager:_initialize_chroma:75 | Initialized ChromaDB at vector_store
+2025-08-06 16:23:01 | INFO | src.rag_engine:__init__:86 | RAG Engine initialized successfully
+2025-08-06 16:23:01 | INFO | src.rag_engine:query:362 | Processing query: What is the Gupta Empire?...
+2025-08-06 16:23:07 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What is the Gupta Empire?...
+2025-08-06 16:23:09 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'What is the Gupta Empire?...'
+2025-08-06 16:23:09 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:23:09 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:23:18 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:23:29 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:23:29 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:23:29 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:23:29 | INFO | src.rag_engine:query:362 | Processing query: Tell me about Krishnadevaraya...
+2025-08-06 16:23:34 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: Tell me about Krishnadevaraya...
+2025-08-06 16:23:36 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'Tell me about Krishnadevaraya...'
+2025-08-06 16:23:36 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:23:36 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:23:44 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:23:54 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:23:54 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:23:54 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:23:54 | INFO | src.rag_engine:query:362 | Processing query: What are the Transformers movies?...
+2025-08-06 16:23:59 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What are the Transformers movies?...
+2025-08-06 16:24:01 | INFO | src.vector_store_manager:similarity_search_with_score:156 | Found 5 similar documents with scores for query: 'What are the Transformers movies?...'
+2025-08-06 16:24:01 | INFO | src.rag_engine:_retrieve_documents:176 | Retrieved 5 documents for query
+2025-08-06 16:24:01 | INFO | src.rag_engine:_form_context:212 | Context formed from 5 documents
+2025-08-06 16:24:09 | INFO | src.rag_engine:_apply_reasoning:252 | Applied chain-of-thought reasoning
+2025-08-06 16:24:18 | INFO | src.rag_engine:_generate_response:319 | Generated response successfully
+2025-08-06 16:24:18 | INFO | src.rag_engine:_quality_check:352 | Quality check completed. Final confidence: 0.000
+2025-08-06 16:24:18 | INFO | src.rag_engine:query:396 | Query processed successfully. Confidence: 0.000
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:204 | Found 2 URLs to scrape
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing transformers group with 1 URLs
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Transformers (film series), skipping...
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:228 | Processing kuru_kingdom group with 1 URLs
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:239 | File already exists for Kuru kingdom, skipping...
+2025-08-06 16:29:55 | INFO | src.wikipedia_scraper:scrape_urls_from_file:252 | Wikipedia scraping completed!
+2025-08-06 16:29:55 | INFO | src.document_processor:process_all_documents:156 | Found 4 documents to process
+2025-08-06 16:29:55 | INFO | src.document_processor:process_single_document:88 | Processing document: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:29:56 | INFO | src.document_processor:extract_text_from_pdf:50 | Successfully extracted text from PDF: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:132 | Created 3 chunks from Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:88 | Processing document: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:29:56 | INFO | src.document_processor:extract_text_from_docx:66 | Successfully extracted text from DOCX: Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:132 | Created 11 chunks from Krishnadevaraya_Wikipedia.docx
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:88 | Processing document: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:29:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:132 | Created 10 chunks from kuru_kingdom_Kuru_kingdom.txt
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers_(film_series).txt
+2025-08-06 16:29:56 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers_(film_series).txt
+2025-08-06 16:29:56 | INFO | src.document_processor:process_single_document:132 | Created 20 chunks from transformers_Transformers_(film_series).txt
+2025-08-06 16:29:56 | INFO | src.document_processor:process_all_documents:167 | Total documents processed: 44 chunks from 4 files
+2025-08-06 16:29:56 | INFO | src.vector_store_manager:__init__:50 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-06 16:29:56 | INFO | src.vector_store_manager:_initialize_chroma:75 | Initialized ChromaDB at vector_store
+2025-08-06 16:29:59 | INFO | src.vector_store_manager:check_embedding_model:236 | Embedding model working correctly. Dimension: 1024
+2025-08-06 16:29:59 | INFO | src.vector_store_manager:add_documents:88 | Adding 44 documents to vector store...
+2025-08-06 16:29:59 | INFO | src.vector_store_manager:add_documents:102 | Processing batch 1/3 (20 documents)
+2025-08-06 16:30:43 | INFO | src.vector_store_manager:add_documents:102 | Processing batch 2/3 (20 documents)
+2025-08-06 16:31:28 | INFO | src.vector_store_manager:add_documents:102 | Processing batch 3/3 (4 documents)
+2025-08-06 16:31:37 | INFO | src.vector_store_manager:add_documents:111 | Successfully added all documents to vector store
+2025-08-06 16:31:37 | INFO | src.vector_store_manager:__init__:50 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-06 16:31:37 | INFO | src.vector_store_manager:_initialize_chroma:75 | Initialized ChromaDB at vector_store
+2025-08-06 16:31:37 | INFO | src.rag_engine:__init__:86 | RAG Engine initialized successfully
+2025-08-06 16:31:37 | INFO | src.rag_engine:query:386 | Processing query: What is the Gupta Empire?...
+2025-08-06 16:31:43 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What is the Gupta Empire?...
+2025-08-06 16:31:45 | INFO | src.vector_store_manager:similarity_search_with_score:161 | Found 5 similar documents with scores for query: 'What is the Gupta Empire?...'
+2025-08-06 16:31:45 | INFO | src.rag_engine:_retrieve_documents:200 | Retrieved 5 documents for query
+2025-08-06 16:31:45 | INFO | src.rag_engine:_form_context:236 | Context formed from 5 documents
+2025-08-06 16:31:53 | INFO | src.rag_engine:_apply_reasoning:276 | Applied chain-of-thought reasoning
+2025-08-06 16:32:02 | INFO | src.rag_engine:_generate_response:343 | Generated response successfully
+2025-08-06 16:32:02 | INFO | src.rag_engine:_quality_check:376 | Quality check completed. Final confidence: 0.439
+2025-08-06 16:32:02 | INFO | src.rag_engine:query:420 | Query processed successfully. Confidence: 0.439
+2025-08-06 16:32:02 | INFO | src.rag_engine:query:386 | Processing query: Tell me about Krishnadevaraya...
+2025-08-06 16:32:07 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: Tell me about Krishnadevaraya...
+2025-08-06 16:32:09 | INFO | src.vector_store_manager:similarity_search_with_score:161 | Found 5 similar documents with scores for query: 'Tell me about Krishnadevaraya...'
+2025-08-06 16:32:09 | INFO | src.rag_engine:_retrieve_documents:200 | Retrieved 5 documents for query
+2025-08-06 16:32:09 | INFO | src.rag_engine:_form_context:236 | Context formed from 5 documents
+2025-08-06 16:32:17 | INFO | src.rag_engine:_apply_reasoning:276 | Applied chain-of-thought reasoning
+2025-08-06 16:32:29 | INFO | src.rag_engine:_generate_response:343 | Generated response successfully
+2025-08-06 16:32:29 | INFO | src.rag_engine:_quality_check:376 | Quality check completed. Final confidence: 0.404
+2025-08-06 16:32:29 | INFO | src.rag_engine:query:420 | Query processed successfully. Confidence: 0.404
+2025-08-06 16:32:29 | INFO | src.rag_engine:query:386 | Processing query: What are the Transformers movies?...
+2025-08-06 16:32:35 | INFO | src.rag_engine:_analyze_query:140 | Query analyzed: What are the Transformers movies?...
+2025-08-06 16:32:37 | INFO | src.vector_store_manager:similarity_search_with_score:161 | Found 5 similar documents with scores for query: 'What are the Transformers movies?...'
+2025-08-06 16:32:37 | INFO | src.rag_engine:_retrieve_documents:200 | Retrieved 5 documents for query
+2025-08-06 16:32:37 | INFO | src.rag_engine:_form_context:236 | Context formed from 5 documents
+2025-08-06 16:32:45 | INFO | src.rag_engine:_apply_reasoning:276 | Applied chain-of-thought reasoning
+2025-08-06 16:32:54 | INFO | src.rag_engine:_generate_response:343 | Generated response successfully
+2025-08-06 16:32:54 | INFO | src.rag_engine:_quality_check:376 | Quality check completed. Final confidence: 0.463
+2025-08-06 16:32:54 | INFO | src.rag_engine:query:420 | Query processed successfully. Confidence: 0.463

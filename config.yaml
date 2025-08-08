@@ -1,0 +1,95 @@
+# GenBotX Configuration File
+# This file contains all configurable parameters for the RAG system
+
+# Large Language Model Settings
+llm:
+  model: "llama3.2"              # Ollama model name
+  temperature: 0.2               # Lower temperature for more confident, focused responses
+  max_tokens: 1000              # Maximum response length (reduced for speed)
+  timeout: 30                   # Request timeout in seconds (reduced)
+
+# Embedding Model Settings
+embeddings:
+  model: "mxbai-embed-large"    # Ollama embedding model
+  timeout: 15                   # Request timeout in seconds (reduced)
+
+# Performance Settings
+performance:
+  batch_size: 20               # Documents per batch for vector processing
+  chunk_size: 1000             # Further optimized for better semantic matches
+  chunk_overlap: 250           # Higher overlap for better context continuity
+
+# Vector Store Configuration
+vector_store:
+  collection_name: "genbotx_documents"    # ChromaDB collection name
+  persist_directory: "vector_store"       # Storage directory
+  similarity_search_k: 10                 # Further increased for maximum context (was 7)
+  similarity_threshold: 0.4               # More lenient threshold for better matches (was 0.5)
+
+# Text Chunking Configuration
+text_splitter:
+  chunk_size: 1000              # Further optimized for better semantic matches
+  chunk_overlap: 250            # Higher overlap for better context continuity
+  separators:                   # Text splitting separators (in order)
+    - "\n\n"
+    - "\n"
+    - ". "                      # Added sentence boundary for better semantic chunks
+    - " "
+    - ""
+
+# Content Management Settings
+content_manager:
+  uploads_directory: "uploads"   # Directory for uploaded files
+  supported_formats:            # Supported file formats
+    - "pdf"
+    - "docx"
+    - "txt"
+  max_file_size_mb: 50          # Maximum file size in MB
+  duplicate_check_enabled: true # Enable content deduplication
+
+# Web Scraping Configuration
+web_scraping:
+  request_delay: 1.0            # Delay between requests (seconds)
+  timeout: 30                   # Request timeout
+  max_retries: 3                # Maximum retry attempts
+  user_agent: "GenBotX/1.0 Web Scraper"
+
+# Wikipedia Scraping Settings
+wikipedia:
+  language: "en"                # Wikipedia language
+  extract_format: "wiki"        # Content format
+  user_agent: "GenBotX/1.0 Wikipedia Scraper"
+
+# Logging Configuration
+logging:
+  level: "INFO"                 # Log level (DEBUG, INFO, WARNING, ERROR)
+  rotation: "10 MB"             # Log file rotation size
+  retention: "7 days"           # Log retention period
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"
+
+# Directory Structure
+directories:
+  documents: "documents"        # Base documents directory
+  logs: "logs"                  # Logs directory
+  vector_store: "vector_store"  # Vector store persistence
+  uploads: "uploads"            # User uploads directory
+
+# Streamlit UI Configuration
+streamlit:
+  page_title: "GenBotX - RAG Assistant"
+  page_icon: "🤖"
+  layout: "wide"
+  sidebar_state: "expanded"
+
+# RAG Pipeline Settings
+rag_pipeline:
+  enable_reasoning: true        # Enable chain-of-thought reasoning
+  enable_quality_check: true    # Enable response quality checking
+  confidence_threshold: 0.75    # Optimized confidence threshold for high-quality responses
+  max_reasoning_steps: 10       # Maximum reasoning steps
+
+# Memory Configuration
+memory:
+  type: "ConversationBufferMemory"  # Memory type
+  max_messages: 20              # Maximum messages to remember
+  return_messages: true         # Return message format
