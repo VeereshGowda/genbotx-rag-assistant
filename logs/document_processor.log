@@ -1746,3 +1746,137 @@
 2025-08-08 12:37:40 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
 2025-08-08 12:37:40 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.780 → 0.990 (boost: 1.66x)
 2025-08-08 12:37:40 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:09:18 | INFO | src.rag_engine:__init__:87 | RAG Engine initialized successfully
+2025-08-08 16:09:18 | INFO | src.vector_store_manager:__init__:49 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-08 16:09:18 | INFO | src.vector_store_manager:_initialize_chroma:74 | Initialized ChromaDB at vector_store
+2025-08-08 16:09:22 | INFO | src.vector_store_manager:similarity_search:139 | Found 10 similar documents for query: 'What is the Kuru kingdom?...'
+2025-08-08 16:09:24 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What is the Kuru kingdom?...'
+2025-08-08 16:09:51 | INFO | src.rag_engine:__init__:87 | RAG Engine initialized successfully
+2025-08-08 16:09:51 | INFO | src.vector_store_manager:__init__:49 | Initialized Ollama embeddings with model: mxbai-embed-large
+2025-08-08 16:09:51 | INFO | src.vector_store_manager:_initialize_chroma:74 | Initialized ChromaDB at vector_store
+2025-08-08 16:09:54 | INFO | src.vector_store_manager:similarity_search:139 | Found 10 similar documents for query: 'What is the Kuru kingdom?...'
+2025-08-08 16:09:56 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What is the Kuru kingdom?...'
+2025-08-08 16:09:56 | INFO | src.rag_engine:query:548 | Processing query: What is the Kuru kingdom?...
+2025-08-08 16:10:03 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: What is the Kuru kingdom?...
+2025-08-08 16:10:05 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What is the Kuru kingdom?...'
+2025-08-08 16:10:05 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'What is the Kuru kingdom?...': ['171.329', '182.329', '185.380', '185.629', '191.935', '194.021', '199.153', '202.626', '205.710', '215.933']
+2025-08-08 16:10:05 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 171.329, Average: 193.404
+2025-08-08 16:10:05 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:10:05 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:10:18 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:10:31 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:10:31 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.780 → 0.990 (boost: 1.67x)
+2025-08-08 16:10:31 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:10:31 | INFO | src.rag_engine:query:548 | Processing query: Describe the Anglo-Mysore Wars...
+2025-08-08 16:10:39 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: Describe the Anglo-Mysore Wars...
+2025-08-08 16:10:42 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'Describe the Anglo-Mysore Wars...'
+2025-08-08 16:10:42 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'Describe the Anglo-Mysore Wars...': ['101.381', '101.381', '109.754', '109.754', '112.700', '112.700', '124.099', '124.099', '126.244', '126.244']
+2025-08-08 16:10:42 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 101.381, Average: 114.836
+2025-08-08 16:10:42 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:10:42 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:10:54 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:11:08 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:11:08 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.780 → 0.990 (boost: 1.35x)
+2025-08-08 16:11:09 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:11:09 | INFO | src.rag_engine:query:548 | Processing query: Tell me about Krishnadevaraya...
+2025-08-08 16:11:17 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: Tell me about Krishnadevaraya...
+2025-08-08 16:11:19 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'Tell me about Krishnadevaraya...'
+2025-08-08 16:11:19 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'Tell me about Krishnadevaraya...': ['147.788', '158.323', '165.769', '175.430', '176.786', '183.635', '186.202', '187.664', '189.947', '191.236']
+2025-08-08 16:11:19 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 147.788, Average: 176.278
+2025-08-08 16:11:19 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:11:19 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:11:31 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:11:46 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:11:46 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.720 → 0.990 (boost: 1.81x)
+2025-08-08 16:11:46 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:11:47 | INFO | src.rag_engine:query:548 | Processing query: What were the main events in the Transformers movie series?...
+2025-08-08 16:11:52 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: What were the main events in the Transformers movi...
+2025-08-08 16:11:55 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What were the main events in the Transformers movi...'
+2025-08-08 16:11:55 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'What were the main events in the Transformers movi...': ['148.796', '149.714', '156.500', '156.634', '158.006', '159.950', '161.312', '166.958', '168.566', '169.199']
+2025-08-08 16:11:55 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 148.796, Average: 159.563
+2025-08-08 16:11:55 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:11:55 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:12:06 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:12:18 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:12:18 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.720 → 0.990 (boost: 1.41x)
+2025-08-08 16:12:18 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:12:19 | INFO | src.rag_engine:query:548 | Processing query: Who ruled the Gupta Empire?...
+2025-08-08 16:12:26 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: Who ruled the Gupta Empire?...
+2025-08-08 16:12:28 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'Who ruled the Gupta Empire?...'
+2025-08-08 16:12:28 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'Who ruled the Gupta Empire?...': ['221.295', '224.127', '225.900', '227.837', '233.639', '240.746', '241.729', '241.825', '242.089', '242.647']
+2025-08-08 16:12:28 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 221.295, Average: 234.183
+2025-08-08 16:12:28 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:12:28 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:12:42 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:12:51 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:12:51 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.780 → 0.990 (boost: 1.64x)
+2025-08-08 16:12:51 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:12:51 | INFO | src.rag_engine:query:548 | Processing query: Explain the significance of Mysore in Indian history...
+2025-08-08 16:12:58 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: Explain the significance of Mysore in Indian histo...
+2025-08-08 16:13:00 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'Explain the significance of Mysore in Indian histo...'
+2025-08-08 16:13:00 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'Explain the significance of Mysore in Indian histo...': ['177.219', '177.219', '179.129', '179.129', '187.818', '187.818', '188.651', '188.651', '191.149', '191.149']
+2025-08-08 16:13:00 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 177.219, Average: 184.793
+2025-08-08 16:13:00 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:13:00 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:13:11 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:13:23 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:13:23 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.595 → 0.943 (boost: 1.47x)
+2025-08-08 16:13:23 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.943
+2025-08-08 16:13:24 | INFO | src.rag_engine:query:548 | Processing query: What are the key characteristics of the Kuru dynasty?...
+2025-08-08 16:13:30 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: What are the key characteristics of the Kuru dynas...
+2025-08-08 16:13:32 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What are the key characteristics of the Kuru dynas...'
+2025-08-08 16:13:32 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'What are the key characteristics of the Kuru dynas...': ['168.918', '174.111', '174.968', '185.018', '186.560', '197.535', '198.372', '202.009', '203.231', '203.601']
+2025-08-08 16:13:32 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 168.918, Average: 189.432
+2025-08-08 16:13:32 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:13:32 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:13:45 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:13:59 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:13:59 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.590 → 0.990 (boost: 1.81x)
+2025-08-08 16:13:59 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:13:59 | INFO | src.rag_engine:query:548 | Processing query: How did the Anglo-Mysore Wars impact South India?...
+2025-08-08 16:14:07 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: How did the Anglo-Mysore Wars impact South India?...
+2025-08-08 16:14:09 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'How did the Anglo-Mysore Wars impact South India?...'
+2025-08-08 16:14:09 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'How did the Anglo-Mysore Wars impact South India?...': ['165.887', '165.887', '170.536', '170.536', '183.550', '183.550', '190.798', '190.798', '194.856', '194.856']
+2025-08-08 16:14:09 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 165.887, Average: 181.126
+2025-08-08 16:14:09 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:14:09 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:14:20 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:14:33 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:14:33 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.780 → 0.990 (boost: 1.66x)
+2025-08-08 16:14:33 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:14:33 | INFO | src.rag_engine:query:548 | Processing query: What was Krishnadevaraya's contribution to literature?...
+2025-08-08 16:14:40 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: What was Krishnadevaraya's contribution to literat...
+2025-08-08 16:14:42 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'What was Krishnadevaraya's contribution to literat...'
+2025-08-08 16:14:42 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'What was Krishnadevaraya's contribution to literat...': ['148.210', '156.213', '171.482', '174.886', '176.003', '178.485', '187.847', '193.016', '195.995', '197.243']
+2025-08-08 16:14:42 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 148.210, Average: 177.938
+2025-08-08 16:14:42 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:14:42 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:14:54 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:15:05 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:15:05 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.590 → 0.990 (boost: 1.64x)
+2025-08-08 16:15:05 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:15:06 | INFO | src.rag_engine:query:548 | Processing query: Describe the plot of the first Transformers movie...
+2025-08-08 16:15:12 | INFO | src.rag_engine:_analyze_query:150 | Query analyzed: Describe the plot of the first Transformers movie...
+2025-08-08 16:15:14 | INFO | src.vector_store_manager:similarity_search_with_score:164 | Found 10 similar documents with scores for query: 'Describe the plot of the first Transformers movie...'
+2025-08-08 16:15:14 | INFO | src.rag_engine:_retrieve_documents:183 | Distance scores for query 'Describe the plot of the first Transformers movie...': ['140.096', '144.665', '145.014', '145.092', '145.270', '147.552', '148.556', '148.659', '148.941', '152.786']
+2025-08-08 16:15:14 | INFO | src.rag_engine:_retrieve_documents:184 | Best (lowest) distance: 140.096, Average: 146.663
+2025-08-08 16:15:14 | INFO | src.rag_engine:_retrieve_documents:263 | Retrieved 10 documents for query
+2025-08-08 16:15:14 | INFO | src.rag_engine:_form_context:338 | Context formed from 10 documents
+2025-08-08 16:15:25 | INFO | src.rag_engine:_apply_reasoning:378 | Applied chain-of-thought reasoning
+2025-08-08 16:15:39 | INFO | src.rag_engine:_generate_response:445 | Generated response successfully
+2025-08-08 16:15:39 | INFO | src.rag_engine:_quality_check:538 | Quality check completed. Confidence: 0.720 → 0.990 (boost: 1.64x)
+2025-08-08 16:15:39 | INFO | src.rag_engine:query:585 | Query processed successfully. Confidence: 0.990
+2025-08-08 16:17:41 | INFO | src.document_processor:process_all_documents:156 | Found 4 documents to process
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:88 | Processing document: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-08 16:17:41 | INFO | src.document_processor:extract_text_from_pdf:50 | Successfully extracted text from PDF: Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:132 | Created 5 chunks from Anglo-Mysore Wars- Sujatha kumari R.pdf
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:88 | Processing document: Krishnadevaraya_Wikipedia.docx
+2025-08-08 16:17:41 | INFO | src.document_processor:extract_text_from_docx:66 | Successfully extracted text from DOCX: Krishnadevaraya_Wikipedia.docx
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:132 | Created 25 chunks from Krishnadevaraya_Wikipedia.docx
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:88 | Processing document: kuru_kingdom_Kuru_kingdom.txt
+2025-08-08 16:17:41 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: kuru_kingdom_Kuru_kingdom.txt
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:132 | Created 22 chunks from kuru_kingdom_Kuru_kingdom.txt
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:88 | Processing document: transformers_Transformers_(film_series).txt
+2025-08-08 16:17:41 | INFO | src.document_processor:extract_text_from_txt:79 | Successfully extracted text from TXT: transformers_Transformers_(film_series).txt
+2025-08-08 16:17:41 | INFO | src.document_processor:process_single_document:132 | Created 45 chunks from transformers_Transformers_(film_series).txt
+2025-08-08 16:17:41 | INFO | src.document_processor:process_all_documents:167 | Total documents processed: 97 chunks from 4 files

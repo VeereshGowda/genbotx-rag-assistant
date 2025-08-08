@@ -244,3 +244,19 @@
 2025-08-06 16:32:54 | INFO | src.rag_engine:_generate_response:343 | Generated response successfully
 2025-08-06 16:32:54 | INFO | src.rag_engine:_quality_check:376 | Quality check completed. Final confidence: 0.463
 2025-08-06 16:32:54 | INFO | src.rag_engine:query:420 | Query processed successfully. Confidence: 0.463
+2025-08-08 16:54:16 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Kuru kingdom
+2025-08-08 16:54:16 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Kuru kingdom using wikipediaapi library
+2025-08-08 16:54:16 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: test_scraped_docs\test_Kuru_kingdom.txt
+2025-08-08 16:54:16 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Transformers (film series)
+2025-08-08 16:54:17 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Transformers (film series) using wikipediaapi library
+2025-08-08 16:54:17 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: test_scraped_docs\test_Transformers_(film_series).txt
+2025-08-08 16:54:17 | INFO | src.content_manager:scrape_webpage:180 | Scraping webpage: https://en.wikipedia.org/wiki/Kuru_kingdom
+2025-08-08 16:54:18 | INFO | src.content_manager:scrape_webpage:180 | Scraping webpage: https://en.wikipedia.org/wiki/Transformers_(film_series)
+2025-08-08 16:57:16 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Kuru kingdom
+2025-08-08 16:57:17 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Kuru kingdom using wikipediaapi library
+2025-08-08 16:57:17 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: test_scraped_docs\test_Kuru_kingdom.txt
+2025-08-08 16:57:17 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:76 | Scraping Wikipedia page: Transformers (film series)
+2025-08-08 16:57:18 | INFO | src.wikipedia_scraper:scrape_wikipedia_page:88 | Successfully scraped Transformers (film series) using wikipediaapi library
+2025-08-08 16:57:18 | INFO | src.wikipedia_scraper:save_as_txt:181 | Saved text file: test_scraped_docs\test_Transformers_(film_series).txt
+2025-08-08 16:57:18 | INFO | src.content_manager:scrape_webpage:180 | Scraping webpage: https://en.wikipedia.org/wiki/Kuru_kingdom
+2025-08-08 16:57:19 | INFO | src.content_manager:scrape_webpage:180 | Scraping webpage: https://en.wikipedia.org/wiki/Transformers_(film_series)
