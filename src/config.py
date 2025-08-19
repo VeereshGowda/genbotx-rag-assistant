@@ -1,16 +1,22 @@
 """
 Configuration file for GenBotX
 Contains all configurable parameters for the RAG system.
+Supports environment variables for sensitive configurations.
 """
 
 import json
 import yaml
+import os
 from pathlib import Path
 from typing import Dict, Any, Optional
 from loguru import logger
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class GenBotXConfig:
-    """Configuration manager for GenBotX"""
+    """Configuration manager for GenBotX with environment variable support"""
     
     def __init__(self, config_file: str = "config.yaml"):
         self.config_file = Path(config_file)
@@ -22,6 +28,52 @@ class GenBotXConfig:
         else:
             # Save default config
             self.save_config()
+            
+        # Override with environment variables
+        self._apply_env_overrides()
+    
+    def _get_env_or_default(self, env_key: str, default_value: Any) -> Any:
+        """Get value from environment variable or return default"""
+        env_value = os.getenv(env_key)
+        if env_value is not None:
+            # Convert to appropriate type
+            if isinstance(default_value, bool):
+                return env_value.lower() in ('true', '1', 'yes', 'on')
+            elif isinstance(default_value, int):
+                try:
+                    return int(env_value)
+                except ValueError:
+                    logger.warning(f"Invalid int value for {env_key}: {env_value}, using default")
+                    return default_value
+            elif isinstance(default_value, float):
+                try:
+                    return float(env_value)
+                except ValueError:
+                    logger.warning(f"Invalid float value for {env_key}: {env_value}, using default")
+                    return default_value
+            return env_value
+        return default_value
+    
+    def _apply_env_overrides(self):
+        """Apply environment variable overrides to configuration"""
+        # LLM Configuration
+        self.config["llm"]["model"] = self._get_env_or_default("OLLAMA_LLM_MODEL", self.config["llm"]["model"])
+        
+        # Embeddings Configuration
+        self.config["embeddings"]["model"] = self._get_env_or_default("OLLAMA_EMBEDDING_MODEL", self.config["embeddings"]["model"])
+        
+        # Vector Store Configuration
+        self.config["vector_store"]["persist_directory"] = self._get_env_or_default("VECTOR_STORE_PATH", self.config["vector_store"]["persist_directory"])
+        self.config["vector_store"]["collection_name"] = self._get_env_or_default("CHROMA_COLLECTION_NAME", self.config["vector_store"]["collection_name"])
+        
+        # Content Manager Configuration
+        self.config["content_manager"]["upload_directory"] = self._get_env_or_default("UPLOAD_DIRECTORY", self.config["content_manager"]["upload_directory"])
+        self.config["content_manager"]["documents_directory"] = self._get_env_or_default("DOCUMENTS_DIRECTORY", self.config["content_manager"]["documents_directory"])
+        self.config["content_manager"]["max_upload_size_mb"] = self._get_env_or_default("MAX_UPLOAD_SIZE_MB", self.config["content_manager"]["max_upload_size_mb"])
+        
+        # Logging Configuration
+        self.config["logging"]["level"] = self._get_env_or_default("LOG_LEVEL", self.config["logging"]["level"])
+        self.config["logging"]["log_dir"] = self._get_env_or_default("LOG_DIRECTORY", self.config["logging"]["log_dir"])
     
     def _load_default_config(self) -> Dict[str, Any]:
         """Load default configuration values"""
@@ -30,7 +82,8 @@ class GenBotXConfig:
                 "model": "llama3.2",
                 "temperature": 0.7,
                 "max_tokens": 2000,
-                "timeout": 60
+                "timeout": 60,
+                "host": self._get_env_or_default("OLLAMA_HOST", "http://localhost:11434")
             },
             "embeddings": {
                 "model": "mxbai-embed-large",

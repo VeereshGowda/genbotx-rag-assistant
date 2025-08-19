@@ -1,6 +1,16 @@
 # GenBotX - RAG Document Assistant
 
-A Retrieval-Augmented Generation (RAG) system that answers questions from custom documents using LangGraph, ChromaDB, and Llama3.2.
+**GenBotX** is an intelligent Retrieval-Augmented Generation (RAG) system designed to provide accurate answers from your custom documents and web content. Built with cutting-edge technologies including LangGraph, ChromaDB, and Llama3.2, GenBotX transforms how you interact with your knowledge base.
+
+## 🎯 Core Purpose and Objectives
+
+GenBotX addresses the critical challenge of **information retrieval and knowledge management** in organizations and research environments. Our system enables users to:
+
+- **Centralize Knowledge**: Upload and manage documents from multiple sources (PDFs, DOCX, TXT, web pages)
+- **Intelligent Search**: Query your knowledge base using natural language with context-aware responses
+- **Multi-Source Integration**: Seamlessly combine local documents with web-scraped content
+- **Real-time Processing**: Get immediate answers with transparent reasoning chains
+- **Scalable Architecture**: Handle growing document collections with persistent vector storage
 
 ![GenBotX Homepage](images/genbotx_homepage.png)
 
@@ -42,17 +52,98 @@ ollama pull llama3.2
 ollama pull mxbai-embed-large
 ```
 
-## Installation
+## 🚀 Quick Start Guide
 
-1. **Clone the project**
-2. **Activate virtual environment**:
-   ```bash
-   .\.venv\Scripts\activate
-   ```
-3. **Install dependencies**:
-   ```bash
-   pip install -e .
-   ```
+### Option 1: Automated Installation (Recommended)
+
+**One-Command Setup:**
+```bash
+# Clone and run automated installer
+git clone https://github.com/VeereshGowda/genbotx-rag-assistant.git
+cd genbotx-rag-assistant
+python install.py
+```
+
+The automated installer will:
+- Check system requirements and dependencies
+- Install Python packages and Ollama models
+- Create necessary directories and configuration files
+- Initialize the system and vector store
+- Provide clear next steps for launching the application
+
+### Option 2: Manual Installation
+
+**Step 1: Prerequisites Setup**
+
+**Required Software:**
+- Python 3.12 or higher
+- [Ollama](https://ollama.ai/) installed and running
+
+**Install Ollama Models:**
+```bash
+# Install required models
+ollama pull llama3.2
+ollama pull mxbai-embed-large
+
+# Verify installation
+ollama list
+```
+
+**Step 2: Installation**
+
+**Clone and Setup:**
+```bash
+# Clone the repository
+git clone https://github.com/VeereshGowda/genbotx-rag-assistant.git
+cd genbotx-rag-assistant
+
+# Create virtual environment (recommended)
+python -m venv .venv
+
+# Activate virtual environment
+# Windows:
+.\.venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
+
+# Install dependencies
+pip install -e .
+```
+
+**Environment Configuration:**
+```bash
+# Copy environment template
+cp .env.example .env
+
+# Edit .env file with your settings (optional - defaults work for local setup)
+# nano .env  # or use your preferred editor
+```
+
+**Step 3: Initialize System**
+
+```bash
+# Test configuration
+python test_config.py
+
+# Initialize knowledge base and vector store
+python setup.py
+```
+
+**Step 4: Launch Application**
+
+**Web Interface (Recommended):**
+```bash
+streamlit run app.py
+```
+
+**Command Line Interface:**
+```bash
+python main.py
+```
+
+Access the web interface at: `http://localhost:8501`
+
+![Query Response Example](images/genbotx_query_response.png)
 
 ## Project Structure
 
@@ -109,23 +200,94 @@ The application includes:
 python main.py
 ```
 
-## Using the System
+## 📖 Using GenBotX
 
-### Upload Files
-1. Launch Streamlit app
-2. Use sidebar "Upload Files" section
-3. Select PDF, DOCX, or TXT files
-4. Click "Process Uploaded Files"
+### Document Upload and Management
 
-### Add Webpages
-1. Use sidebar "Add Webpages" section
-2. Enter URLs (single or multiple)
-3. Click "Scrape and Add Webpages"
+**Supported File Types:**
+GenBotX processes multiple document formats with optimized extraction techniques for each type:
 
-### Query the System
-Ask questions about your uploaded content:
+- **PDF Files**: Advanced text extraction preserving document structure and metadata
+- **DOCX Documents**: Full content extraction including headers, formatting, and embedded elements  
+- **Text Files**: Direct processing with encoding detection and content validation
 
-![Query Response Example](images/genbotx_query_response.png)
+**Upload Process:**
+1. Access the Streamlit web interface at `http://localhost:8501`
+2. Navigate to the "Upload Files" section in the sidebar
+3. Select single or multiple files using the file picker
+4. Click "Process Uploaded Files" to add documents to your knowledge base
+5. Monitor processing progress through real-time status updates
+
+**Content Verification:**
+The system automatically detects and prevents duplicate content using advanced hashing algorithms. Each uploaded document is validated for format compatibility and content integrity before processing.
+
+### Web Content Integration
+
+**URL-Based Content Addition:**
+GenBotX can extract and process content directly from web pages, expanding your knowledge base with dynamic online content:
+
+1. Use the "Add Webpages" section in the sidebar
+2. Enter single URLs or multiple URLs (one per line)
+3. Click "Scrape and Add Webpages" to initiate content extraction
+4. Review extraction summary and content validation results
+
+**Intelligent Content Extraction:**
+The web scraping module employs sophisticated algorithms to identify main content areas while filtering out navigation elements, advertisements, and other non-essential page components. This ensures high-quality content addition to your knowledge base.
+
+### Querying Your Knowledge Base
+
+**Natural Language Interaction:**
+GenBotX enables sophisticated querying through natural language input. The system understands context, intent, and complex relationships within your document collection.
+
+**Example Query Types:**
+
+*Historical Analysis:*
+"What were the main causes and consequences of the Anglo-Mysore Wars, and how did they impact regional politics?"
+
+*Comparative Research:*
+"Compare the leadership styles and achievements of Krishnadevaraya with other rulers of his era."
+
+*Technical Information:*
+"Explain the narrative structure and themes of the Transformers film series across different releases."
+
+*Cross-Document Synthesis:*
+"What connections exist between the Kuru Kingdom's political structure and later South Indian dynasties?"
+
+**Response Features:**
+- Contextually relevant answers with source attribution
+- Chain-of-thought reasoning display showing the system's analytical process
+- Direct links to source documents for verification and deeper exploration
+- Conversation memory maintaining context across multiple queries
+
+![System Statistics](images/genbotx_system_statistics.png)
+
+### Configuration Management
+
+**Web-Based Configuration Interface:**
+Access comprehensive system settings through the integrated configuration manager:
+
+1. Navigate to the "Configuration" page in the web interface
+2. Modify parameters across different system components
+3. Apply changes in real-time without system restart
+4. Export and import configuration profiles for different use cases
+
+**Key Configuration Areas:**
+
+*Language Model Settings:* Temperature, token limits, and response generation parameters
+*Vector Store Configuration:* Similarity thresholds, search parameters, and indexing options  
+*Document Processing:* Chunk sizes, overlap settings, and format-specific options
+*Content Management:* Upload limits, storage paths, and content validation settings
+
+### Advanced Features
+
+**Session Management:**
+GenBotX maintains conversation context across queries, enabling complex multi-turn interactions and follow-up questions that build upon previous responses.
+
+**Performance Monitoring:**
+Built-in performance metrics provide insights into system operation, including query response times, document processing statistics, and resource utilization patterns.
+
+**Content Analytics:**
+Track which documents are most frequently accessed, identify knowledge gaps, and understand user query patterns to optimize your knowledge base organization.
 
 ## Example Queries
 
